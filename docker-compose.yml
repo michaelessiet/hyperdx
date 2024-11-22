@@ -153,7 +153,7 @@ services:
     image: ${IMAGE_NAME}:${IMAGE_VERSION}-api
     container_name: hdx-oss-api
     ports:
-      - ${HYPERDX_API_PORT}:${HYPERDX_API_PORT}
+      - 10101:${HYPERDX_API_PORT}
     environment:
       AGGREGATOR_API_URL: 'http://aggregator:8001'
       APP_TYPE: 'api'
