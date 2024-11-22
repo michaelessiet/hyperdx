@@ -209,7 +209,6 @@ services:
       CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
     volumes:
       - ./docker/clickhouse/local:/etc/clickhouse-server
-      - ./docker/clickhouse/local:/etc/clickhouse-server
       - .volumes/ch_data:/var/lib/clickhouse
       - .volumes/ch_logs:/var/log/clickhouse-server
     restart: on-failure
